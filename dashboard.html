@@ -3,54 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Chats</title>
+    <title>Book Chat</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <h1>Welcome to Book Chats</h1>
+      <h1>Book Chat</h1>
     </header>
-    <nav>
-      <ul>
-        <li><a href="#chat1">Book Chat 1</a></li>
-        <li><a href="#chat2">Book Chat 2</a></li>
-        <li><a href="#chat3">Book Chat 3</a></li>
-      </ul>
-    </nav>
     <main>
-      <section id="chat1" class="chat">
-        <h2>Book Chat 1</h2>
-        <div class="chat-content">
-          <!-- Chat messages go here -->
-        </div>
-        <form>
-          <input type="text" placeholder="Type your message" />
-          <button type="submit">Send</button>
-        </form>
-      </section>
-      <section id="chat2" class="chat">
-        <h2>Book Chat 2</h2>
-        <div class="chat-content">
-          <!-- Chat messages go here -->
-        </div>
-        <form>
-          <input type="text" placeholder="Type your message" />
-          <button type="submit">Send</button>
-        </form>
-      </section>
-      <section id="chat3" class="chat">
-        <h2>Book Chat 3</h2>
-        <div class="chat-content">
-          <!-- Chat messages go here -->
-        </div>
-        <form>
-          <input type="text" placeholder="Type your message" />
-          <button type="submit">Send</button>
-        </form>
-      </section>
+      <div id="chat-window">
+        <!-- Chat messages will be displayed here -->
+      </div>
+      <div id="user-input">
+        <input type="text" id="message-input" placeholder="Type your message" />
+        <button onclick="sendMessage()">Send</button>
+      </div>
     </main>
-    <footer>
-      <p>&copy; 2024 Book Chats</p>
-    </footer>
+    <script src="dashboard.js"></script>
   </body>
 </html>
