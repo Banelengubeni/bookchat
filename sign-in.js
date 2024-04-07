@@ -11,5 +11,5 @@ document
     // For demonstration purposes, let's just log the input values
     console.log("Username:", username);
     console.log("Password:", password);
-    window.location.href = "dashboard.html";
+    window.location.href = "home.html";
   });
