@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <style>
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      }
+
+      #profile-form label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      #profile-form input[type="text"],
+      #profile-form textarea {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      #profile-display img {
+        max-width: 200px;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Profile</h1>
+      <div id="profile-form">
+        <label for="profile-pic">Profile Picture:</label>
+        <input type="file" id="profile-pic" accept="image/*" />
+        <label for="username">Username:</label>
+        <input type="text" id="username" />
+        <label for="bio">Bio:</label>
+        <textarea id="bio"></textarea>
+        <label for="notification">Notification:</label>
+        <input type="checkbox" id="notification" />
+        <label for="notification">Turn on notifications</label>
+        <button onclick="saveProfile()">Save</button>
+      </div>
+      <div id="profile-display" style="display: none">
+        <h2 id="display-username"></h2>
+        <img src="" id="display-profile-pic" alt="Profile Picture" />
+        <p id="display-bio"></p>
+        <p id="notification-status"></p>
+      </div>
+    </div>
+
+    <script src="profile.js"></script>
+  </body>
+</html>
